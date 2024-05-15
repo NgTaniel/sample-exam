@@ -79,12 +79,6 @@ const BlankoPage = () => {
     }
   }
 
-  // const getPuzzle = () => {
-  //   let puzzle = getRandomisedPuzzle()
-
-
-  // }
-
   const setGrids = () => {
     const newBoard = {...board}
     setBoard(newBoard)
@@ -97,11 +91,6 @@ const BlankoPage = () => {
   return (
     <>
       <div style={{margin: '20rem 0', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'row'}}>
-        {/* {defaultGrid.map((num, index) => (
-          <div style={{border: '1px solid black', width: '80px', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} key={index}>
-            {[num]}
-          </div>
-        ))} */}
         {board.map((char, index) => (
           <div style={{border: '1px solid black', width: '80px', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} key={index}>
             {char === '' ? (
